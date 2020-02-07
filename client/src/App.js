@@ -57,6 +57,8 @@ class App extends Component {
             Read more
           </a>
         </header>
+      <div class="App-wrapper">
+         <div class="App-content">
         <p>{this.state.response}</p>
         <form onSubmit={this.handleSubmit}>
           <p>
@@ -70,11 +72,13 @@ class App extends Component {
           <button type="submit">Submit</button>
         </form>
         <p>{this.state.responseToPost}</p>
+          </div>
        <footer className="App-footer">
          <p>
             Lana Havryliuk
           </p>
          </footer>
+           </div>
       </div>
     );
   }
